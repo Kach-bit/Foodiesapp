@@ -1,0 +1,25 @@
+{
+    "customers": [
+      {
+        "name": "Simon",
+        "surname": "Kach",
+        "age": "24",
+        "phone": "6900000000",
+        "email": "sk@gmail.com",
+        "password": "Pass99!",
+        "floor":"10",
+        "doorbell": "test"
+      }
+    ],
+
+    "stores": [
+        {
+          "store_name": "Sushi Experience",
+          "phone": "6900000000",
+          "email": "sk@gmail.com",
+          "password": "Pass99!",
+          "open_hours":"10",
+          "min_order": "7"
+        }
+      ]
+  }

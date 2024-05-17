@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style/mystyle3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/87793c17c0.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+	<nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fa-solid fa-drumstick-bite"></i>Foodies App</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/delivery_order.html" class="navbar__links">Choose a Store</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/choose_deli_or_dine.html" class="navbar__links">Delivery or Reservation</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/register_store.html" class="navbar__links">Register a Store</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+	<div class="store_desc">
+		<a href="/menu.html" id="store__logo"><i class="fa-brands fa-gitkraken"></i>Sushi Experience</a>
+		<h4>Voukourestiou 3, 10671, Athens</h4>
+		<h4>Sushi, Ramen - Min Order 5€ - 30'</h4>
+	</div>
+	
+
+    <div class="row">
+		<div class="column1">
+			<div class="categories_checkbox">
+				<h4>Categories:</h4>
+				<a href="#c1" onclick="displayFoodItems('c1')">Sushi</a>
+				<a href="#c2" onclick="displayFoodItems('c2')">Fried Rice</a>
+				<a href="#c3" onclick="displayFoodItems('c3')">Noodles</a>
+                <a href="#c4" onclick="displayFoodItems('c4')">Ramen</a>
+                <a href="#c5" onclick="displayFoodItems('c5')">Dessert</a>
+                <a href="#c6" onclick="displayFoodItems('c6')">Drinks</a>
+                <a href="#c7" onclick="displayFoodItems('c7')">Beverages</a>
+                <a href="#c8" onclick="displayFoodItems('c8')">Beers</a>
+			</div>
+		</div>
+		<div class="column2">
+			<div class="food_cat" id="c1">
+				<h3>Sushi</h3>
+				<div class="food_item" onclick="addToOrder('Nagiri', 7.00)">
+					<b>Nagiri</b>
+					<br>
+					7,00€
+				</div>
+				<div class="food_item" onclick="addToOrder('New York', 6.00)">
+					<b>New York</b>
+					<br>
+					6,00€
+				</div>
+			</div>
+			<div class="food_cat" id="c2">
+				<h3>Fried Rice</h3>
+				<div class="food_item" onclick="addToOrder('Fried Rice Chicken', 8.00)">
+					<b>Fried Rice Chicken</b>
+					<br>
+					8,00€
+				</div>
+				<div class="food_item" onclick="addToOrder('Fried Rice Mushroom', 7.00)">
+					<b>Fried Rice Mushroom</b>
+					<br>
+					7,00€
+				</div>
+				<div class="food_item" onclick="addToOrder('Fried Rice with japanese omelette', 9.00)">
+					<b>Fried Rice with japanese omelette</b>
+					<br>
+					8,00€
+				</div>
+				<div class="food_item" onclick="addToOrder('Fried Rice with beef', 8.50)">
+					<b>Fried Rice with beef</b>
+					<br>
+					8,50€
+				</div>
+			</div>
+
+			<div class="food_cat" id="c3">
+				<h3>Noodles</h3>
+				<div class="food_item" onclick="addToOrder('Dragon Noodles with chicken and mushroom', 9.00)">
+					<b>Dragon Noodles with chicken and mushroom</b>
+					<br>
+					9,00€
+				</div>
+				<div class="food_item" onclick="addToOrder(' Tai Noodles with beef', 9.00)">
+					<b>Tai Noodles with beef</b>
+					<br>
+					9,00€
+				</div>
+				<div class="food_item" onclick="addToOrder('Egg Noodles with veggies', 7.00)">
+					<b>Egg Noodles with veggies</b>
+					<br>
+					7,00€
+				</div>
+				<div class="food_item" onclick="addToOrder('Vietnamese Noodles', 9.00)">
+					<b>Vietnamese Noodles</b>
+					<br>
+					9,00€
+				</div>
+			</div>
+
+			<div class="food_cat" id="c4">
+				<h3>Ramen</h3>
+				<div class="food_item" onclick="addToOrder('Vegetarian Tantanmen Ramen', 10.00)">
+					<b>Vegetarian Tantanmen Ramen</b>
+					<br>
+					10,00€
+				</div>
+				<div class="food_item" onclick="addToOrder('Spicy Beef Ramen', 9.00)">
+					<b>Spicy Beef Ramen</b>
+					<br>
+					9,00€
+				</div>
+				<div class="food_item" onclick="addToOrder('Shoyu Ramen', 8.00)">
+					<b>Shoyu Ramen</b>
+					<br>
+					8,00€
+				</div>
+				<div class="food_item" onclick="addToOrder('Beef Ramen', 9.00)">
+					<b>Beef Ramen</b>
+					<br>
+					9,00€
+				</div>
+			</div>
+
+			<div class="food_cat" id="c5">
+				<h3>Desserts</h3>
+				<div class="food_item" onclick="addToOrder('Egg Tart', 5.00)">
+					<b>Egg Tart</b>
+					<br>
+					5,00€
+				</div>
+				<div class="food_item" onclick="addToOrder('Mooncake', 6.00)">
+					<b>Mooncake</b>
+					<br>
+					6,00€
+				</div>
+				<div class="food_item" onclick="addToOrder('Fortune Cake', 4.00)">
+					<b>Fortune Cake</b>
+					<br>
+					4,00€
+				</div>
+			</div>
+
+			<div class="food_cat" id="c6">
+				<h3>Drinks</h3>
+				<div class="food_item" onclick="addToOrder('Margharita', 10.00)">
+					<b>Margharita</b>
+					<br>
+					10,00€
+				</div>
+				<div class="food_item" onclick="addToOrder('Negroni', 9.00)">
+					<b>Negroni</b>
+					<br>
+					9,00€
+				</div>
+				<div class="food_item" onclick="addToOrder('Paloma', 8.00)">
+					<b>Paloma</b>
+					<br>
+					8,00€
+				</div>
+				<div class="food_item" onclick="addToOrder('Mojito', 9.00)">
+					<b>Mojito</b>
+					<br>
+					9,00€
+				</div>
+			</div>
+
+			<div class="food_cat" id="c7">
+				<h3>Beverages</h3>
+				<div class="food_item" onclick="addToOrder('Pink Grapefruit Soda', 5.00)">
+					<b>Pink Grapefruit Soda</b>
+					<br>
+					5,00€
+				</div>
+				<div class="food_item" onclick="addToOrder('Fritz Cola', 3.00)">
+					<b>Fritz Cola</b>
+					<br>
+					3,00€
+				</div>
+				<div class="food_item" onclick="addToOrder('Lemonade', 3.00)">
+					<b>Lemonade</b>
+					<br>
+					3,00€
+				</div>
+				<div class="food_item" onclick="addToOrder('Tonic Water', 3.00)">
+					<b>Tonic Water</b>
+					<br>
+					3,00€
+				</div>
+			</div>
+
+			<div class="food_cat" id="c8">
+				<h3>Beers</h3>
+				<div class="food_item" onclick="addToOrder('Tsingtao', 5.00)">
+					<b>Tsingtao</b>
+					<br>
+					5,00€
+				</div>
+				<div class="food_item" onclick="addToOrder('Snow Beer', 5.00)">
+					<b>Snow Beer</b>
+					<br>
+					5,00€
+				</div>
+				<div class="food_item" onclick="addToOrder('Nymfi', 4.00)">
+					<b>Nymfi</b>
+					<br>
+					4,00€
+				</div>
+				<div class="food_item" onclick="addToOrder('Craft Beer', 3.00)">
+					<b>Craft Beer</b>
+					<br>
+					3,00€
+				</div>
+			</div>
+			
+		</div>
+	</div>
+		<div class="column3">
+            <h3>Cart:</h3>
+            <div id="cart"></div>
+            <br>
+            <div class="submit">
+                <input type="submit" value="Continue" onclick="saveAndRedirect()">
+            </div>
+        </div>
+    </div>
+
+	<script>
+		function saveAndRedirect() {
+    
+    const selectedProducts = ["Product1", "Product2", "Product3"];
+	localStorage.setItem("selectedProducts", JSON.stringify(selectedProducts));
+    window.location.href = "order_confirm.html";
+	}
+	</script>
+	
+	
+	<script src="app.js"></script>
+	
+</body>
+</html>

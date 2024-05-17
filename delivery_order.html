@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Choose Store</title>
+    <link rel="stylesheet" href="style/mystyle3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/87793c17c0.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fa-solid fa-drumstick-bite"></i>Foodies App</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/delivery_order.html" class="navbar__links">Choose a Store</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/choose_deli_or_dine.html" class="navbar__links">Delivery or Reservation</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/register_store.html" class="navbar__links">Register a Store</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+	<div class="store_desc">
+		<a href="/menu.html" id="store__logo">Choose a store</a>
+	</div>
+	
+
+    <div class="row">
+		<div class="column1">
+			<div class="categories_checkbox">
+				<h4>Categories:</h4>
+				<a href="#c1" onclick="displayFoodItems('c1')">Gyros</a>
+				<a href="#c2" onclick="displayFoodItems('c2')">Grill</a>
+				<a href="#c3" onclick="displayFoodItems('c3')">Chinese</a>
+                <a href="#c4" onclick="displayFoodItems('c4')">Pizza</a>
+                <a href="#c5" onclick="displayFoodItems('c5')">Brunch</a>
+                <a href="#c6" onclick="displayFoodItems('c6')">Coffee</a>
+                <a href="#c7" onclick="displayFoodItems('c7')">Greek Food</a>
+                <a href="#c8" onclick="displayFoodItems('c8')">Pastry</a>
+			</div>
+		</div>
+		<div class="column2">
+			<div class="food_cat" id="c1">
+				<h3>Gyros</h3>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Gyros tis polis</b>
+					<br>
+					Min Order 7,00€
+				</div>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Gyradikok</b>
+					<br>
+					Min Order 6,00€
+				</div>
+			</div>
+			<div class="food_cat" id="c2">
+				<h3>Grill</h3>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Grill Bro</b>
+					<br>
+					Min Order 8,00€
+				</div>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Best</b>
+					<br>
+					Min Order 7,00€
+				</div>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Grill It</b>
+					<br>
+					Min Order 8,00€
+				</div>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>BBQ</b>
+					<br>
+					Min Order 8,50€
+				</div>
+			</div>
+
+			<div class="food_cat" id="c3">
+				<h3>Chinese</h3>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Sushi experience</b>
+					<br>
+					Min Order 5,00€
+				</div>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Hanoi</b>
+					<br>
+					Min Order 9,00€
+				</div>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Tokyo</b>
+					<br>
+					Min Order 7,00€
+				</div>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Vietnamese Place</b>
+					<br>
+					Min Order 9,00€
+				</div>
+			</div>
+
+			<div class="food_cat" id="c4">
+				<h3>Pizza</h3>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Pizza Place</b>
+					<br>
+					Min Order 10,00€
+				</div>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Salento</b>
+					<br>
+					Min Order 9,00€
+				</div>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Parma Pizzeria</b>
+					<br>
+					Min Order 8,00€
+				</div>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>The Bear</b>
+					<br>
+					Min Order 9,00€
+				</div>
+			</div>
+
+			<div class="food_cat" id="c5">
+				<h3>Brunch</h3>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Egg Place</b>
+					<br>
+					Min Order 5,00€
+				</div>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Dreamy Breakfast</b>
+					<br>
+					Min Order 6,00€
+				</div>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Plenty</b>
+					<br>
+					Min Order 4,00€
+				</div>
+			</div>
+
+			<div class="food_cat" id="c6">
+				<h3>Coffee</h3>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Valenio</b>
+					<br>
+					Min Order 10,00€
+				</div>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Peach Boy</b>
+					<br>
+					Min Order 9,00€
+				</div>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Roasters</b>
+					<br>
+					Min Order 8,00€
+				</div>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Hood</b>
+					<br>
+					Min Order 9,00€
+				</div>
+			</div>
+
+			<div class="food_cat" id="c7">
+				<h3>Greek Food</h3>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Taper</b>
+					<br>
+					Min Order 5,00€
+				</div>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Mammys</b>
+					<br>
+					Min Order 3,00€
+				</div>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>The Oven</b>
+					<br>
+					Min Order 3,00€
+				</div>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Eaters</b>
+					<br>
+					Min Order 3,00€
+				</div>
+			</div>
+
+			<div class="food_cat" id="c8">
+				<h3>Pastry</h3>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Sweet Place</b>
+					<br>
+					Min Order 5,00€
+				</div>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>HoneyMoon</b>
+					<br>
+					Min Order 5,00€
+				</div>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Taste</b>
+					<br>
+					Min Order 4,00€
+				</div>
+				<div class="food_item" onclick="redirectToPage('/menu.html')">
+					<b>Cake Heaven</b>
+					<br>
+					Min Order 3,00€
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+
+	<script src="app.js"></script>
+    <script>
+        function redirectToPage(pageURL) {
+            window.location.href = pageURL;
+        }
+    </script>
+    
+	
+</body>
+</html>

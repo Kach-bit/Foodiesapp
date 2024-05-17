@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Customer Reservations</title>
+    <link rel="stylesheet" href="style/storeProf.css">
+    <link rel="stylesheet" href="style/table.css">
+    <script src="https://kit.fontawesome.com/87793c17c0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fa-solid fa-drumstick-bite"></i>Foodies App</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/delivery_order.html" class="navbar__links">Choose a Store</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/choose_deli_or_dine.html" class="navbar__links">Delivery or Reservation</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/register_store.html" class="navbar__links">Register a Store</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <br>
+    <div class="table_container">
+        <table class="responsive-table">
+            <thead>
+                <tr>
+                    <th scope="col">Store</th>
+                    <th scope="col">Date & Time of Reservation</th>
+                    <th scope="col">Reservation Id</th>
+                    <th scope="col">Reservation Date</th>
+                    <th scope="col">Reservation Time</th>
+                    <th scope="col">Table Size</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            
+                <tr>
+                    <th scope="row">Store Name</th>
+                    <td data-title="Date & Time of Reservation">Reservation Date and Time</td>
+                    <td data-title="Reservation Id">Reservation ID</td>
+                    <td data-title="Reservation Date">Date of Reservation</td>
+                    <td data-title="Reservation Time">Time of Reservation</td>
+                    <td data-title="Table Size">Table Size</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="submit">
+        <input type="submit" value="Back to Home" onclick="redirectToPage('/index.html')">
+    </div>
+
+    <script>
+        function redirectToPage(pageURL) {
+            window.location.href = pageURL;
+        }
+    </script>
+
+
+</body>
+</html>

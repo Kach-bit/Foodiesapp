@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodies App</title>
+    <link rel="stylesheet" href="style/mystyle.css">
+    <script src="https://kit.fontawesome.com/87793c17c0.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fa-solid fa-drumstick-bite"></i>Foodies App</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/delivery_order.html" class="navbar__links">Choose a Store</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/choose_deli_or_dine.html" class="navbar__links">Delivery or Reservation</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/register_store.html" class="navbar__links">Register a Store</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Foodies App</h1>
+            <p>Discover the best flavors in town</p>
+            <div class="buttons">
+                <button onclick="openLoginForm1()" class="btn">Customer Login</button>
+                <button onclick="openLoginForm2()" class="btn">Store Login</button>
+                <a href="register_customer.html" class="btn">Customer Register</a>
+                <a href="register_store.html" class="btn">Store Register</a>
+            </div>
+
+            <div class="button">
+                <a href="choose_deli_or_dine.html" class="btn1">Continue as Guest    </a>
+            </div>
+        </div>
+    
+    
+        <div id="loginForm1" class="form-popup">
+            <form action="/choose_deli_or_dine.html" class="form-container">
+                <h2>Customer Login</h2>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+    
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+    
+                <button type="submit" class="btn" onclick="redirectToPage1('/choose_deli_or_dine.html')">Login</button>
+                <button type="button" class="btn cancel" onclick="closeLoginForm1()">Close</button>
+            </form>
+        </div>
+
+        <div id="loginForm2" class="form-popup">
+            <form action="/addProduct.html"  class="form-container">
+                <h2>Store Login</h2>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+    
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+    
+                <button type="submit" class="btn" onclick="redirectToPage2('/addProduct.html')">Login</button>
+                <button type="button" class="btn cancel" onclick="closeLoginForm2()">Close</button>
+            </form>
+        </div>
+
+
+    </section>
+    
+    <div id="app">
+        
+    </div>
+    <script>
+        function redirectToPage1(pageURL) {
+            window.location.href = pageURL;
+        }
+    </script>
+
+    <script>
+    function redirectToPage2(pageURL) {
+        window.location.href = pageURL;
+    }
+    </script>
+
+    <script>
+    function closeLoginForm1() {
+
+    var loginForm = document.getElementById("loginForm1");
+
+
+    loginForm.style.display = "none";
+    }
+
+    </script>
+
+    <script>
+    function closeLoginFor2() {
+
+    var loginForm = document.getElementById("loginForm2");
+
+
+    loginForm.style.display = "none";
+    }
+
+    </script>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
+
