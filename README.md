@@ -11,7 +11,7 @@ A delivery and table reservation web app
  - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
 
 
-##Dependency
+## Dependency
 extension Live Server from Visual Studio Code
 
 ## Badges
