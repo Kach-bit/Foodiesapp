@@ -12,7 +12,7 @@ A delivery and table reservation web app
 
 
 ## Dependency
-extension Live Server from Visual Studio Code
+Extension Live Server from Visual Studio Code
 
 ## Badges
 
